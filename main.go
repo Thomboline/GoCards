@@ -1,11 +1,7 @@
 package main
 
-import (
-	"fmt"
-)
-
 func main() {
 	cards := newDeck()
-	cards.saveToFile("my_cards")
-	fmt.Println(cards.toString())
+	cards.shuffle()
+	cards.print()
 }
